@@ -148,11 +148,17 @@
         }
 
         /* New style for aligning dates to the right */
-       .date-container {
+         .date-container {
             display: flex;
             justify-content: flex-end;
             font-style: italic;
-            margin-top: 0; /* Reduced extra margin */
+            margin-top: 0;
+            margin-bottom: 5px;  /* Reduced margin */
+        }
+
+        /* Reduce gap between date and text */
+        .content p {
+            margin-bottom: 5px; /* Reduced bottom margin */
         }
         /* Responsive styles */
         @media (max-width: 768px) {
