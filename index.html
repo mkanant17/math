@@ -7,16 +7,8 @@
     <meta name="description" content="Anant Narayanan's academic profile">
     <title>Anant Narayanan</title>
 
- 
-<script type="text/javascript" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-  <script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
-  </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -24,18 +16,19 @@
         html, body {
             background-color: #ffffe6;
             font-family: Verdana, sans-serif;
-            margin: 8px;
-            padding: 7px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
             height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         /* Main header styles */
         header {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
             text-align: center;
             padding: 20px;
             background-color: #ffffe6;
@@ -48,10 +41,11 @@
         }
 
         #homeimage img {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            max-width: 100%; /* Ensure it scales on small screens */
         }
 
         h1 {
@@ -159,6 +153,8 @@
 
             #homeimage {
                 margin-bottom: 15px;
+                width: 120px;
+                height: 120px;
             }
 
             h1 {
@@ -183,6 +179,20 @@
             .vertical-line {
                 display: none;
             }
+
+            /* Adjust text size for small screens */
+            .content h2 {
+                font-size: 1rem;
+            }
+
+            .content p {
+                font-size: 0.9rem;
+            }
+
+            .tab button {
+                padding: 10px;
+                font-size: 16px;
+            }
         }
 
         /* Further adjustments for very small screens (phones in portrait mode) */
@@ -200,8 +210,8 @@
             }
 
             .tab button {
-                padding: 10px;
-                font-size: 16px;
+                padding: 8px;
+                font-size: 14px;
             }
         }
     </style>
@@ -220,7 +230,7 @@
             <p>I am currently pursuing an MS (Res.) in the Department of Mathematics at the Indian Institute of Science (IISc), Bangalore.</p>
             <p>My primary research interests are metric geometry and analysis. I enjoy tackling problems that carry a convex flavor, and I am fascinated by the wide range of techniques in analysis that are used to approach such problems. I am also interested in the intersection of these areas with theoretical computer science, especially computational geometry.</p>
             <p>My updated CV can be found <a href="https://drive.google.com/file/d/1CAruUhY-0fe8qIUCt1PL57WvwVNS4aL-/view?usp=sharing" target="_blank">here</a>.</p>
- <p><strong>Email:</strong> anantn at iisc dot ac dot in</p>
+            <p><strong>Email:</strong> anantn at iisc dot ac dot in</p>
         </section>
 
         <div class="section-divider"></div>
@@ -230,7 +240,7 @@
             <p>MS (Res.) in Mathematics<br> Aug 2022 - Present
             <br>Indian Institute of Science
             <br>Supervisor: Purvi Gupta
-<br><br>
+            <br><br>
             B.Sc. (Honours) in Mathematics<br>
             Aug 2019 - June 2022
             <br>Sri Venkateswara College <br> University of Delhi
@@ -250,7 +260,7 @@
         <section>
             <h2>Invited Talks</h2>
             <ul>
-                <li><em>Approximate depth of a point in a convex body</em> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Feb 2025<br> Stat-Math Colloquium <br> ISI Bangalore</li>
+                <li><em>Approximate depth of a point in a convex body</em> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Feb 2025<br> Stat-Math Colloquium <br> ISI Bangalore</li>
             </ul>
         </section>
 
@@ -258,15 +268,8 @@
         
         <section>
             <h2>Master's Project & Thesis</h2>
-           <p>            Master's Thesis, IISc, Bangalore &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Aug 2024 - Present <br> <em>Membership Queries via Hilbert Geometry</em><br> Supervisor: Purvi Gupta</p>
-            <p>My thesis focuses on exploring Hilbert geometry through the lens of computational geometry. In a joint work with P. Gupta, we propose an approximate membership query for the convex floating bodies of a given bounded convex domain \( K \subset \mathbb{R}^d \), where the error is measured by the affine-invariant Hilbert metric on \( K \). We produce an efficient data structure to answer this query, which relies on a comparison between convex floating bodies and Hilbert metric balls. Alternately, the data structure computes the approximate depth in a convex body of a query point. </p>
-            
-<br>
-                <p>Master's Project, IISc, Bangalore &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Jan 2024 - June 2024<br> <em>Volume Entropy of Hilbert Metrics via Flag Approximability of Convex Bodies</em> &nbsp;&nbsp;
-                    <a href="https://indianinstituteofscience-my.sharepoint.com/:b:/g/personal/anantn_iisc_ac_in/EdGrT2vyvj5Kk6m4ZkuD34YBFofHbl_BVD9lX7eAWKEaiw?e=8cemKq" target="_blank">Report</a>&nbsp;
-                    <a href="https://indianinstituteofscience-my.sharepoint.com/:b:/g/personal/anantn_iisc_ac_in/EUn8TikxjoRPtDMWiOxAIbIBZsgFh2itG7MwnkYllypP-Q?e=uU6cpV" target="_blank">Slides</a>
-<br> Supervisor: Purvi Gupta</p>
-            <p>For my project, I studied a proof of the entropy upper bound conjecture for Hilbert geometry, by Vernicos and Walsh (2018). It involves establishing a concrete relationship between volume entropy and flag approximability, where the latter is a combinatorial measure of complexity of polytopes that approximate a given convex body in the Hausdorff metric. The paper cleverly uses techniques from convex geometry, Finsler geometry and combinatorics. For instance, I studied a paper by Arya, da Fonseca, and Mount (2016) which provides a way to control the combinatorial complexity of approximating polytopes using the Busemann volume of Hilbert metric balls, simply reducing it to a comparison between these balls and Macbeath regions. </p>
+            <p>Master's Thesis, IISc, Bangalore &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Aug 2024 - Present <br> <em>Membership Queries via Hilbert Geometry</em><br> Supervisor: Purvi Gupta</p>
+            <p>My thesis focuses on exploring Hilbert geometry through the lens of computational geometry...</p>
         </section>
     </div>
 
